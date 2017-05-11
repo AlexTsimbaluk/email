@@ -1,0 +1,40 @@
+.button {
+	padding: 0;
+	width: 100%;
+	border-spacing: 0;
+	border-collapse: collapse;
+	vertical-align: middle;
+	text-align: center;
+
+	&__tr {
+		padding: 0;
+		vertical-align: middle;
+		text-align: center;
+	}
+
+	&__td {
+		text-align: center;
+		// padding: 0;
+		padding: 0;
+		vertical-align: middle;
+	}
+
+	&__link {
+		display: inline-block;
+		padding: 12px 50px;
+		margin: 20px auto;
+		text-align: center;
+		font-weight: normal;
+		font-size: 24px;
+		line-height: 120%;
+		color: #fff;
+		text-transform: uppercase;
+		text-decoration: none;
+		background: #449d44;
+
+		@media(max-width: @scr-ip5) {
+			font-size: 18px !important;
+			line-height: 1 !important;
+		}
+	}
+}

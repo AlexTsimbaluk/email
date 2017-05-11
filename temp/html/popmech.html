@@ -1,0 +1,476 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style>.body {
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: left;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 120%;
+  font-family: Arial, sans-serif;
+  color: #303030;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+}
+.layout-wrap {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  vertical-align: top;
+  background: #ffffff;
+}
+.layout-wrap__tr {
+  padding: 0;
+  vertical-align: top;
+}
+.layout-wrap__td {
+  padding: 0;
+  vertical-align: top;
+  text-align: center;
+}
+.layout {
+  margin: 0 auto;
+  padding: 0;
+  width: 600px;
+  border-spacing: 0;
+  border-collapse: collapse;
+  vertical-align: top;
+  background: #ffffff;
+}
+@media (min-width: 0px) {
+  .layout {
+    width: auto !important;
+    max-width: 600% !important;
+  }
+}
+.layout__tr {
+  padding: 0;
+  vertical-align: top;
+}
+.layout__td {
+  padding: 0 10px;
+  vertical-align: top;
+  text-align: left;
+}
+.layout__td_logo {
+  padding: 0;
+}
+.logo {
+  padding: 0;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  vertical-align: top;
+  border-bottom: 2px solid #000;
+  background-color: #fff;
+}
+.logo__tr {
+  padding: 0;
+  vertical-align: top;
+}
+.logo__td {
+  padding-top: 20px;
+  padding-right: 16px;
+  padding-bottom: 20px;
+  padding-left: 16px;
+  text-align: center;
+  vertical-align: middle;
+}
+.logo__img {
+  max-width: 100%;
+}
+.item {
+  padding: 0;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  vertical-align: top;
+  text-align: left;
+  border-bottom: 1px dashed #dadad2;
+}
+.item_last {
+  border-bottom: none;
+}
+.item__tr {
+  padding: 0;
+  vertical-align: top;
+}
+.item__td_left {
+  padding-top: 20px;
+  padding-right: 0px;
+  padding-bottom: 20px;
+  padding-left: 0px;
+  width: 160px;
+  vertical-align: top;
+}
+@media (max-width: 320px) {
+  .item__td_left {
+    display: block !important;
+    padding-bottom: 0 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+}
+.item__td_right {
+  margin: 0 auto;
+  padding-top: 18px;
+  padding-bottom: 20px;
+  padding-right: 0px;
+  padding-left: 10px;
+  width: 410px;
+  text-align: left;
+  font-weight: normal;
+  font-family: Arial, sans-serif;
+  color: #303030;
+  vertical-align: top;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+  word-wrap: break-word;
+}
+@media (max-width: 320px) {
+  .item__td_right {
+    display: block !important;
+    padding-left: 0 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+}
+.item__link {
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  line-height: 120%;
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+}
+@media (min-width: 0px) {
+  .item__link:hover {
+    text-decoration: underline !important;
+  }
+}
+.item__link_img {
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+.item__link_rubrik {
+  font-weight: bold;
+  color: #b0b0b0;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.item__link_title {
+  font-weight: normal;
+  color: #303030;
+  font-size: 24px;
+}
+@media (max-width: 414px) {
+  .item__link_title {
+    font-size: 20px !important;
+    line-height: 1 !important;
+  }
+}
+.item__img {
+  display: block;
+  margin: 0;
+  max-width: 100%;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  -ms-interpolation-mode: bicubic;
+  text-align: center;
+}
+@media (max-width: 320px) {
+  .item__img {
+    width: 100% !important;
+  }
+}
+.item__p {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+.item__p_rubrik {
+  margin-top: -3px;
+  line-height: 13px;
+  margin-bottom: 4px;
+}
+.item__p_title {
+  text-align: left;
+  margin-bottom: 10px;
+}
+@media (max-width: 320px) {
+  .item__p_title {
+    margin-bottom: 0 !important;
+  }
+}
+@media (max-width: 414px) {
+  .item__p_title {
+    line-height: 1 !important;
+  }
+}
+.banner {
+  padding: 0;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  vertical-align: top;
+  text-align: left;
+}
+.banner__tr {
+  padding: 0;
+  vertical-align: top;
+  text-align: left;
+}
+.banner__td {
+  text-align: left;
+  padding: 0;
+  vertical-align: top;
+}
+.banner__link {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 120%;
+  font-family: Arial, sans-serif;
+  color: #303030;
+  text-decoration: none;
+}
+.banner__img {
+  display: block;
+  max-width: 100%;
+  outline: none;
+  -ms-interpolation-mode: bicubic;
+  text-decoration: none;
+  border: none;
+}
+.button {
+  padding: 0;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  vertical-align: top;
+  text-align: left;
+}
+.button__tr {
+  padding: 0;
+  vertical-align: top;
+  text-align: left;
+}
+.button__td {
+  text-align: left;
+  padding-top: 0;
+  padding-bottom: 20px;
+  padding-left: 0;
+  padding-right: 0;
+  vertical-align: top;
+}
+.button__link {
+  display: block;
+  padding: 12px 0;
+  margin: 0;
+  text-align: center;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 120%;
+  font-family: 'Roboto', Arial, sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #ec008c;
+}
+@media (max-width: 320px) {
+  .button__link {
+    font-size: 18px !important;
+    line-height: 1 !important;
+  }
+}
+.footer {
+  padding: 0;
+  width: 100%;
+  vertical-align: top;
+  text-align: left;
+  border-spacing: 0;
+  border-collapse: collapse;
+  background-color: #eaeae9;
+}
+.footer__tr {
+  padding: 0;
+  vertical-align: top;
+  text-align: left;
+}
+.footer__td {
+  text-align: left;
+  word-wrap: break-word;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  line-height: 120%;
+  vertical-align: top;
+  -webkit-hyphens: auto;
+  color: #303030;
+  font-family: Arial;
+  font-weight: normal;
+  margin: 0;
+  font-size: 24px;
+  padding: 21px 0 21px 10px;
+  border-collapse: collapse;
+}
+.footer p {
+  margin: 0;
+  padding: 5px 0;
+  text-align: left;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #303030;
+}
+.footer a {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: underline;
+  color: #1e97e0;
+}
+@media (min-width: 0px) {
+  .footer a:hover {
+    text-decoration: none !important;
+  }
+}
+
+    </style>
+    <title>Популярная механика</title>
+  </head>
+  <body class="body">
+    <table class="layout-wrap">
+      <tr class="layout-wrap__tr">
+        <td class="layout-wrap__td" align="center" valign="top">
+          <table class="layout">
+            <tr class="layout__tr">
+              <td class="layout__td layout__td_logo" align="left" valign="top">
+                <table class="logo">
+                  <tr class="logo__tr">
+                    <td class="logo__td" align="center" valign="middle"><a class="logo__link" href="http://www.popmech.ru/technologies/?utm_content=logo"><img class="logo__img" src="http://start.ru/uploads/popmech/pm-logo-daily-black-2.png"/></a></td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr class="layout__tr">
+              <td class="layout__td" align="left" valign="top">
+                <table class="item">
+                  <tr class="item__tr">
+                    <td class="item__td_left" align="left" valign="top"><a class="item__link_img" href="http://www.popmech.ru/science/231972-10-samykh-krasivykh-paukov-mira/?utm_content=img_1"><img class="item__img" src="http://start.ru/uploads/popmech/pm-ed-20161226-img_1.jpg" width="160"/></a></td>
+                    <td class="item__td_right">
+                      <p class="item__p item__p_rubrik"><a class="item__link item__link_rubrik" href="http://www.popmech.ru/science/?utm_content=category_1">Наука</a></p>
+                      <p class="item__p item__p_title"><a class="item__link item__link_title" href="http://www.popmech.ru/science/231972-10-samykh-krasivykh-paukov-mira/?utm_content=img_1">10 самых красивых пауков мира</a></p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr class="layout__tr">
+              <td class="layout__td" align="left" valign="top">
+                <table class="item item_last">
+                  <tr class="item__tr">
+                    <td class="item__td_left" align="left" valign="top"><a class="item__link_img" href="http://www.popmech.ru/history/308412-naydena-naskalnaya-rozhdestvenskaya-otkrytka-vozrastom-5000-let/?utm_content=img_2"><img class="item__img" src="http://start.ru/uploads/popmech/pm-ed-20161226-img_2.jpg" width="160"/></a></td>
+                    <td class="item__td_right">
+                      <p class="item__p item__p_rubrik"><a class="item__link item__link_rubrik" href="http://www.popmech.ru/history/?utm_content=category_2">История</a></p>
+                      <p class="item__p item__p_title"><a class="item__link item__link_title" href="http://www.popmech.ru/history/308412-naydena-naskalnaya-rozhdestvenskaya-otkrytka-vozrastom-5000-let/?utm_content=img_2">Найдена наскальная «рождественнаская открытка»  возрастом 5000 лет</a></p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr class="layout__tr">
+              <td class="layout__td" align="center" valign="top">
+                <table class="banner">
+                  <tr class="banner__tr">
+                    <td class="banner__td" align="center" valign="top"><a class="banner__link" href="http://premium-publishing.ru/popmech/?utm_content=ed-adv-580x90"><img class="banner__img" src="http://start.ru/uploads/popmech/pm-ed-adv-print-1612-.jpg"/></a></td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr class="layout__tr">
+              <td class="layout__td" align="left" valign="top">
+                <table class="item">
+                  <tr class="item__tr">
+                    <td class="item__td_left" align="left" valign="top"><a class="item__link_img" href="http://www.popmech.ru/adrenalin/308012-ekstremaly-ustroili-beysdzhamping-v-chernobyle/?utm_content=img_3"><img class="item__img" src="http://start.ru/uploads/popmech/pm-ed-20161226-img_3.jpg" width="160"/></a></td>
+                    <td class="item__td_right">
+                      <p class="item__p item__p_rubrik"><a class="item__link item__link_rubrik" href="http://www.popmech.ru/adrenalin/?utm_content=category_3">Адреналин</a></p>
+                      <p class="item__p item__p_title"><a class="item__link item__link_title" href="http://www.popmech.ru/adrenalin/308012-ekstremaly-ustroili-beysdzhamping-v-chernobyle/?utm_content=img_3">Экстремалы устроили бейсджампинг в Чернобыле</a></p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr class="layout__tr">
+              <td class="layout__td" align="left" valign="top">
+                <table class="item">
+                  <tr class="item__tr">
+                    <td class="item__td_left" align="left" valign="top"><a class="item__link_img" href="http://www.popmech.ru/vehicles/308382-umeltsy-perelopatili-staryy-dvizhok-chrysler/?utm_content=img_4"><img class="item__img" src="http://start.ru/uploads/popmech/pm-ed-20161226-img_4.jpg" width="160"/></a></td>
+                    <td class="item__td_right">
+                      <p class="item__p item__p_rubrik"><a class="item__link item__link_rubrik" href="http://www.popmech.ru/vehicles/?utm_content=category_4">Автомобили</a></p>
+                      <p class="item__p item__p_title"><a class="item__link item__link_title" href="http://www.popmech.ru/vehicles/308382-umeltsy-perelopatili-staryy-dvizhok-chrysler/?utm_content=img_4">Умельцы перелопатили старый движок Chrysler</a></p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr class="layout__tr">
+              <td class="layout__td" align="left" valign="top">
+                <table class="item item_last">
+                  <tr class="item__tr">
+                    <td class="item__td_left" align="left" valign="top"><a class="item__link_img" href="http://www.popmech.ru/vehicles/165001-samye-krasivye-avtomobili-voisin/?utm_content=img_5"><img class="item__img" src="http://start.ru/uploads/popmech/pm-ed-20161226-img_5.jpg" width="160"/></a></td>
+                    <td class="item__td_right">
+                      <p class="item__p item__p_rubrik"><a class="item__link item__link_rubrik" href="http://www.popmech.ru/vehicles/?utm_content=category_5">Автомобили</a></p>
+                      <p class="item__p item__p_title"><a class="item__link item__link_title" href="http://www.popmech.ru/vehicles/165001-samye-krasivye-avtomobili-voisin/?utm_content=img_5">Самые красивые автомобили: Voisin</a></p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr class="layout__tr">
+              <td class="layout__td" align="center" valign="top">
+                <table class="footer">
+                  <tr class="footer__tr">
+                    <td class="footer__td" align="left" valign="top"><p>«<a href="http://www.popmech.ru/?utm_content=footer">Популярная механика</a>» специально для <a href="mailto:{email}">{email}</a>. <a href="{unsubscribe}" target="_blank" title="Отписаться">Отписаться.</a></p><p>Будьте с нами на связи в <a href="http://vk.com/popularmechanics">Vkontakte</a>, <a href="http://www.facebook.com/PopMechanics">Facebook</a>, <a href="http://twitter.com/PopMechanica">Twitter</a>, <a href="http://ok.ru/popmech">Ok.ru</a>, <a href="http://instagram.com/popmech.ru">Instagram</a>.</p><p>&copy; ООО «Фэшн Пресс», 127018, Москва, ул. Полковая, д. 3, стр. 1.</p></td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

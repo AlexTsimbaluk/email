@@ -1,0 +1,48 @@
+include esquire/vars.pug
+include esquire/logo.pug
+include esquire/item.pug
+include esquire/banner.pug
+include esquire/button.pug
+include esquire/header.pug
+include esquire/map.pug
+include esquire/nav.pug
+include esquire/footer.pug
+
+doctype strict
+html(xmlns="http://www.w3.org/1999/xhtml")
+	head
+		meta(http-equiv="X-UA-Compatible",content="IE=edge")
+		meta(http-equiv="Content-Type",content="text/html; charset=utf-8")
+		meta(name="viewport",content="width=device-width, initial-scale=1.0")
+		style
+			include ../../temp/css/esquire.css
+		title= title
+
+	body.body
+		table.layout-wrap
+			tr.layout-wrap__tr
+				td.layout-wrap__td(align='center', valign='middle')
+					table.layout
+						//- ПЕРЕСТАНОВКА ЭТИХ СТРОК МЕНЯЕТ ПОРЯДОК БЛОКОВ В ПИСЬМЕ
+						//- все переменные описаны в vars_***.pug
+						//+logo(logo_link, logo_img)
+						+banner(banner_text)
+
+						+header
+
+						+map
+
+						+item('')
+						+item('')
+						+item('')
+						+item('')
+						+item('')
+						+item('')
+						+item('')
+						+item('')
+						
+						+button(button_link, button_text)
+
+						+nav
+
+						//+footer(footer_text)

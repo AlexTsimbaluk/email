@@ -1,0 +1,143 @@
+.item {
+	padding: 0;
+	width: 100%;
+	border-spacing: 0;
+	border-collapse: collapse;
+	vertical-align: top;
+	text-align: left;
+	border-bottom: 1px dashed #dadad2;
+
+	&_last {
+		border-bottom: none;
+	}
+
+	&__tr {
+		padding: 0;
+		vertical-align: top;
+	}
+
+	&__td {
+
+		&_left {
+			padding-top: 20px;
+			padding-right: 0px;
+			padding-bottom: 20px;
+			padding-left: 0px;
+			width: 160px;
+			vertical-align: top;
+
+			@media(max-width: @scr-ip5) {
+				display: block !important;
+				padding-bottom: 0 !important;
+				width: 100% !important;
+				box-sizing: border-box !important;
+			}
+		}
+
+		&_right {
+			margin: 0 auto;
+			padding-top: 18px;
+			padding-bottom: 20px;
+			padding-right: 0px;
+			padding-left: 10px;
+			width: 410px;
+			text-align: left;
+			font-weight: normal;
+			// font-size: 24px;
+			// line-height: 120%;
+			font-family: Arial, sans-serif;
+			color: #303030;
+			vertical-align: top;
+			.hyphens();
+			word-wrap: break-word;
+
+			@media(max-width: @scr-ip5) {
+				display: block !important;
+				padding-left: 0 !important;
+				width: 100% !important;
+				box-sizing: border-box !important;
+			}
+		}
+	}
+
+	&__link {
+		cursor: pointer;
+		margin: 0;
+		padding: 0;
+		text-align: left;
+		line-height: 120%;
+		font-family: Arial, sans-serif;
+		text-decoration: none;
+
+		@media (min-width: @scr-all) {
+			&:hover {
+				text-decoration: underline !important;
+			}
+		}
+
+		&_img {
+			cursor: pointer;
+			padding: 0;
+			margin: 0;
+			text-decoration: none;
+		}
+
+		&_rubrik {
+			font-weight: bold;
+			color: #b0b0b0;
+			font-size: 13px;
+			text-transform: uppercase;
+		}
+
+		&_title {
+			font-weight: normal;
+			color: #303030;
+			font-size: 24px;
+
+			@media(max-width: @scr-ip6p) {
+				font-size: 20px !important;
+				line-height: 1 !important;
+			}
+		}
+	}
+
+	&__img {
+		display: block;
+		margin: 0;
+		max-width: 100%;
+		outline: none;
+		border: none;
+		text-decoration: none;
+		-ms-interpolation-mode: bicubic;
+		text-align: center;
+
+		@media(max-width: @scr-ip5) {
+			width: 100% !important;
+		}
+	}
+
+	&__p {
+		padding: 0;
+		margin: 0;
+		text-align: left;
+
+		&_rubrik {
+			margin-top: -3px;
+			line-height: 13px;
+			margin-bottom: 4px;
+		}
+
+		&_title {
+			text-align: left;
+			margin-bottom: 10px;
+
+			@media(max-width: @scr-ip5) {
+				margin-bottom: 0 !important;
+			}
+
+			@media(max-width: @scr-ip6p) {
+				line-height: 1 !important;
+			}
+		}
+	}
+}

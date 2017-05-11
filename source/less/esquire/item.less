@@ -1,0 +1,132 @@
+.item {
+	padding: 0;
+	width: 100%;
+	border-spacing: 0;
+	border-collapse: collapse;
+	vertical-align: top;
+	text-align: left;
+
+	&_last {
+		border-bottom: none;
+	}
+
+	&__tr {
+		padding: 0;
+		vertical-align: top;
+	}
+
+	&__td {
+		padding: 8px;
+		vertical-align: middle;
+
+		&_left {
+			width: 160px;
+
+			@media(max-width: @scr-ip5) {
+				display: block !important;
+				padding-bottom: 0 !important;
+				width: 100% !important;
+				box-sizing: border-box !important;
+			}
+		}
+
+		&_right {
+			margin: 0 auto;
+			width: 410px;
+			text-align: left;
+			font-weight: normal;
+			// font-size: 24px;
+			// line-height: 120%;
+			font-family: sans-serif;
+			color: #303030;
+			.hyphens();
+			word-wrap: break-word;
+
+			@media(max-width: @scr-ip5) {
+				display: block !important;
+				padding-left: 0 !important;
+				width: 100% !important;
+				box-sizing: border-box !important;
+			}
+		}
+	}
+
+	&__link {
+		cursor: pointer;
+		margin: 0;
+		padding: 0;
+		text-align: left;
+		line-height: 120%;
+		font-family: sans-serif;
+		text-decoration: none;
+
+		@media (min-width: @scr-all) {
+			&:hover {
+				text-decoration: underline !important;
+			}
+		}
+
+		&_img {
+			cursor: pointer;
+			padding: 0;
+			margin: 0;
+			text-decoration: none;
+		}
+
+		&_rubrik {
+			font-weight: bold;
+			color: #b0b0b0;
+			font-size: 13px;
+			text-transform: uppercase;
+		}
+
+		&_title {
+			font-weight: normal;
+			color: #303030;
+			font-size: 24px;
+
+			@media(max-width: @scr-ip6p) {
+				font-size: 20px !important;
+				line-height: 1 !important;
+			}
+		}
+	}
+
+	&__img {
+		display: block;
+		margin: 0;
+		max-width: 100%;
+		outline: none;
+		border: none;
+		text-decoration: none;
+		-ms-interpolation-mode: bicubic;
+		text-align: center;
+
+		@media(max-width: @scr-ip5) {
+			width: 100% !important;
+		}
+	}
+
+	&__p {
+		padding: 0;
+		margin: 0;
+		text-align: left;
+
+		&.item_title {
+			font-weight: bold;
+		}
+
+		&.item_content {
+			text-align: left;
+			
+
+			@media(max-width: @scr-ip5) {
+				
+			}
+
+			@media(max-width: @scr-ip6p) {
+				
+			}
+		}
+	}
+}

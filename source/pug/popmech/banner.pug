@@ -1,0 +1,8 @@
+mixin banner(banner_link, banner_img)
+	tr.layout__tr
+		td.layout__td(align='center', valign='top')
+			table.banner
+				tr.banner__tr
+					td.banner__td(align='center',valign='top')
+						a.banner__link(href= banner_link)
+							img.banner__img(src= banner_img)

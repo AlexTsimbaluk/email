@@ -1,0 +1,33 @@
+include popmech/vars.pug
+include popmech/logo.pug
+include popmech/item.pug
+include popmech/banner.pug
+include popmech/button.pug
+include popmech/footer.pug
+
+doctype strict
+html(xmlns="http://www.w3.org/1999/xhtml")
+	head
+		meta(http-equiv="X-UA-Compatible",content="IE=edge")
+		meta(http-equiv="Content-Type",content="text/html; charset=utf-8")
+		meta(name="viewport",content="width=device-width, initial-scale=1.0")
+		style
+			include ../../temp/css/popmech.css
+		title= title
+
+	body.body
+		table.layout-wrap
+			tr.layout-wrap__tr
+				td.layout-wrap__td(align='center', valign='top')
+					table.layout
+						//- ПЕРЕСТАНОВКА ЭТИХ СТРОК МЕНЯЕТ ПОРЯДОК БЛОКОВ В ПИСЬМЕ
+						//- все переменный описаны в vars_***.pug
+						+logo(logo_link, logo_img)
+						+item(''         ,item_img_1,item_rubrik_1,item_text_1,item_link_1, item_link_rubrik_1)
+						+item('item_last',item_img_2,item_rubrik_2,item_text_2,item_link_2, item_link_rubrik_2)
+						+banner(banner_link, banner_img)
+						+item(''         ,item_img_3,item_rubrik_3,item_text_3,item_link_3, item_link_rubrik_3)
+						+item(''         ,item_img_4,item_rubrik_4,item_text_4,item_link_4, item_link_rubrik_4)
+						+item('item_last',item_img_5,item_rubrik_5,item_text_5,item_link_5, item_link_rubrik_5)
+						//-+button(button_link, button_text)
+						+footer(footer_text)
