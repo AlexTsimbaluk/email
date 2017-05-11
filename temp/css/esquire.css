@@ -92,7 +92,25 @@ h6 {
   margin: 0;
   padding: 0;
 }
+img {
+  border: 0;
+}
 p {
+  Margin: 0;
+  padding: 0;
+  text-align: left;
+}
+table {
+  border: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  Margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  vertical-align: top;
+  text-align: left;
+}
+td {
   margin: 0;
   padding: 0;
 }
@@ -235,21 +253,12 @@ p {
 .item__p.item_content {
   text-align: left;
 }
-.banner {
-  padding: 0;
-  width: 100%;
-  border-spacing: 0;
-  border-collapse: collapse;
-  vertical-align: top;
-  text-align: left;
-}
 .banner__tr {
   padding: 0;
   vertical-align: top;
   text-align: left;
 }
 .banner__td {
-  padding: 0;
   vertical-align: top;
 }
 .banner__link {
