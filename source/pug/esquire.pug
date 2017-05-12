@@ -1,6 +1,6 @@
 include esquire/vars.pug
 include esquire/logo.pug
-include esquire/item.pug
+include esquire/order.pug
 include esquire/banner.pug
 include esquire/button.pug
 include esquire/header.pug
@@ -23,26 +23,17 @@ html(xmlns="http://www.w3.org/1999/xhtml")
 			tr.layout-wrap__tr
 				td.layout-wrap__td(align='center', valign='middle')
 					table.layout
-						//- ПЕРЕСТАНОВКА ЭТИХ СТРОК МЕНЯЕТ ПОРЯДОК БЛОКОВ В ПИСЬМЕ
-						//- все переменные описаны в vars_***.pug
 						//+logo(logo_link, logo_img)
 						+banner(banner_text)
 
 						+header
 
-						+map
+						//+map
 
-						+item('')
-						+item('')
-						+item('')
-						+item('')
-						+item('')
-						+item('')
-						+item('')
-						+item('')
+						+order('')
 						
-						+button(button_link, button_text)
+						//+button(button_link, button_text)
 
 						+nav
 
-						//+footer(footer_text)
+						+footer

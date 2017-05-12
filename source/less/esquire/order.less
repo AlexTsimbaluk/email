@@ -1,0 +1,44 @@
+.order {
+
+	&__td {
+		padding: 8px;
+
+		&_left {
+			text-align: left;
+			width: 160px;
+
+			@media(max-width: @scr-ip5) {
+				display: block !important;
+				padding-bottom: 0 !important;
+				width: 100% !important;
+				box-sizing: border-box !important;
+			}
+		}
+
+		&_right {
+			Margin: 0 auto;
+			margin: 0 auto;
+			width: 410px;
+			.hyphens();
+			word-wrap: break-word;
+
+			@media(max-width: @scr-ip5) {
+				display: block !important;
+				padding-left: 0 !important;
+				width: 100% !important;
+				box-sizing: border-box !important;
+			}
+		}
+	}
+
+	&__content {
+
+		&.title {
+			font-weight: bold;
+		}
+
+		&.value {
+			
+		}
+	}
+}
