@@ -1,6 +1,8 @@
 include esquire/vars.pug
 include esquire/logo.pug
+include esquire/order_header.pug
 include esquire/order.pug
+include esquire/order_link_tel.pug
 include esquire/banner.pug
 include esquire/button.pug
 include esquire/header.pug
@@ -29,8 +31,10 @@ html(xmlns="http://www.w3.org/1999/xhtml")
 						+header
 
 						//+map
-
+						
+						+order_header('Заголовок')
 						+order('')
+						+order_link_tel
 						
 						//+button(button_link, button_text)
 

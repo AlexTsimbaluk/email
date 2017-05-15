@@ -26,6 +26,26 @@
 
 
 @media (max-width: 320px) {
+  .order_link_tel__td_left {
+    display: block !important;
+    padding-bottom: 0 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+}
+
+
+@media (max-width: 320px) {
+  .order_link_tel__td_right {
+    display: block !important;
+    padding-left: 0 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+}
+
+
+@media (max-width: 320px) {
   .button__link {
     font-size: 18px !important;
     line-height: 1 !important;
@@ -58,7 +78,7 @@
                 </table>
               </td>
             </tr>
-            <tr class="layout__tr" style="Margin: 0; margin: 0; padding: 0;">
+            <tr class="layout__tr layout__tr_header" style="Margin: 0; background: #eee; margin: 0; padding: 0;">
               <td class="layout__td" style="Margin: 0; margin: 0; padding: 0; text-align: center; vertical-align: middle;">
                 <table class="header" style="Margin: 0 auto; border: 0; border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; width: 100%;">
                   <tr class="header__tr" style="Margin: 0; margin: 0; padding: 0;">
@@ -71,15 +91,38 @@
               </td>
             </tr>
             <!--+map-->
-            <tr class="layout__tr layout__tr_order" style="Margin: 0; margin: 0; padding: 0;">
+            <tr class="layout__tr layout__tr_order_header" style="Margin: 0; background: #ffa701; margin: 0; padding: 0;">
+              <td class="layout__td" style="Margin: 0; margin: 0; padding: 0; text-align: center; vertical-align: middle;">
+                <table class="order_header" style="Margin: 0 auto; border: 0; border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; width: 100%;">
+                  <tr class="order_header__tr" style="Margin: 0; margin: 0; padding: 0;">
+                    <td class="order_header__td" colspan="100%" style="Margin: 0; color: #fff; font-weight: bold; margin: 0; padding: 8px; text-align: center; vertical-align: middle;">Заголовок</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr class="layout__tr layout__tr_order" style="Margin: 0; background: #eee; margin: 0; padding: 0;">
               <td class="layout__td" style="Margin: 0; margin: 0; padding: 0; text-align: center; vertical-align: middle;">
                 <table class="order" style="Margin: 0 auto; border: 0; border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; width: 100%;">
                   <tr class="order__tr" style="Margin: 0; margin: 0; padding: 0;">
                     <td class="order__td order__td_left" style="Margin: 0; margin: 0; padding: 8px; text-align: left; vertical-align: middle; width: 160px;">
                       <p class="order__content title" style="Margin: 0; font-weight: bold; margin: 0; padding: 0;">Откуда</p>
                     </td>
-                    <td class="order__td order__td_right" style="-moz-hyphens: auto; -ms-hyphens: auto; -o-hyphens: auto; -webkit-hyphens: auto; Margin: 0 auto; hyphens: auto; margin: 0 auto; padding: 8px; text-align: center; vertical-align: middle; width: 410px; word-wrap: break-word;">
+                    <td class="order__td order__td_right" style="-moz-hyphens: auto; -ms-hyphens: auto; -o-hyphens: auto; -webkit-hyphens: auto; Margin: 0 auto; hyphens: auto; margin: 0 auto; padding: 8px; text-align: left; vertical-align: middle; width: 410px; word-wrap: break-word;">
                       <p class="order__content value" style="Margin: 0; margin: 0; padding: 0;">Россия, Москва, Малый Тишинский переулок, 19</p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr class="layout__tr layout__tr_order_link_tel" style="Margin: 0; margin: 0; padding: 0;">
+              <td class="layout__td" style="Margin: 0; margin: 0; padding: 0; text-align: center; vertical-align: middle;">
+                <table class="order_link_tel" style="Margin: 0 auto; border: 0; border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; width: 100%;">
+                  <tr class="order_link_tel__tr" style="Margin: 0; margin: 0; padding: 0;">
+                    <td class="order_link_tel__td order_link_tel__td_left" style="Margin: 0; margin: 0; padding: 8px; text-align: left; vertical-align: middle; width: 160px;">
+                      <p class="order_link_tel__content title" style="Margin: 0; font-weight: bold; margin: 0; padding: 0;">Номер</p>
+                    </td>
+                    <td class="order_link_tel__td order_link_tel__td_right" style="-moz-hyphens: auto; -ms-hyphens: auto; -o-hyphens: auto; -webkit-hyphens: auto; Margin: 0 auto; hyphens: auto; margin: 0 auto; padding: 8px; text-align: left; vertical-align: middle; width: 410px; word-wrap: break-word;">
+                      <p class="order_link_tel__content value" style="Margin: 0; margin: 0; padding: 0;"><a href="tel:+7925111333777" style="Margin: 0; color: #303030; font-size: 14px; font-weight: bold; margin: 0; padding: 0; text-decoration: none;">+7925111333777</a></p>
                     </td>
                   </tr>
                 </table>
@@ -92,9 +135,9 @@
                   <tr class="nav__tr" style="Margin: 0; margin: 0; padding: 0;">
                     <td class="nav__td" style="Margin: 0; margin: 0; padding: 0; text-align: center; vertical-align: middle;">
                       <ul class="nav__menu" style="Margin: 20px auto; display: inline-block; margin: 20px auto; padding: 0;">
-                        <li class="nav__item" style="Margin: 0; float: left; list-style-type: none; margin: 0; margin-left: 20px; padding: 0;"><a href="https://www.nowtaxi.ru/" style="Margin: 0; color: #7f8c8d; margin: 0; padding: 0; text-decoration: none;">На сайт</a></li>
-                        <li class="nav__item" style="Margin: 0; float: left; list-style-type: none; margin: 0; margin-left: 20px; padding: 0;"><a href="#" style="Margin: 0; color: #7f8c8d; margin: 0; padding: 0; text-decoration: none;">Отписаться</a></li>
-                        <li class="nav__item" style="Margin: 0; float: left; list-style-type: none; margin: 0; margin-left: 20px; padding: 0;"><a href="#" style="Margin: 0; color: #7f8c8d; margin: 0; padding: 0; text-decoration: none;">Тарифы</a></li>
+                        <li class="nav__item" style="Margin: 0; float: left; list-style-type: none; margin: 0; margin-left: 20px; padding: 0;"><a href="https://www.nowtaxi.ru/" target="_blank" style="Margin: 0; color: #7f8c8d; margin: 0; padding: 0; text-decoration: none;">На сайт</a></li>
+                        <li class="nav__item" style="Margin: 0; float: left; list-style-type: none; margin: 0; margin-left: 20px; padding: 0;"><a href="#" target="_blank" style="Margin: 0; color: #7f8c8d; margin: 0; padding: 0; text-decoration: none;">Отписаться</a></li>
+                        <li class="nav__item" style="Margin: 0; float: left; list-style-type: none; margin: 0; margin-left: 20px; padding: 0;"><a href="#" target="_blank" style="Margin: 0; color: #7f8c8d; margin: 0; padding: 0; text-decoration: none;">Тарифы</a></li>
                       </ul>
                     </td>
                   </tr>

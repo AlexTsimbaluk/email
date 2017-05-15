@@ -1,4 +1,4 @@
-.order {
+.order_link_tel {
 
 	&__td {
 		padding: 8px;
@@ -39,7 +39,12 @@
 		}
 
 		&.value {
-			
+			a[href^='tel'] {
+				color: #303030;
+				font-size: 14px;
+				font-weight: bold;
+				text-decoration: none;
+			}
 		}
 	}
 }

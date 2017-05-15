@@ -114,6 +114,12 @@ li {
 .layout__tr_banner {
   background: #555;
 }
+.layout__tr_header {
+  background: #eee;
+}
+.layout__tr_order_header {
+  background: #ffa701;
+}
 .layout__tr_order:nth-child(even) {
   background: #eee;
 }
@@ -132,11 +138,16 @@ li {
 .logo__td {
   padding: 20px 16px;
 }
-.order__td {
+.order_header__td {
+  color: #fff;
+  font-weight: bold;
   padding: 8px;
 }
-.order__td_left {
+.order__td {
+  padding: 8px;
   text-align: left;
+}
+.order__td_left {
   width: 160px;
 }
 @media (max-width: 320px) {
@@ -168,6 +179,49 @@ li {
 }
 .order__content.title {
   font-weight: bold;
+}
+.order_link_tel__td {
+  padding: 8px;
+  text-align: left;
+}
+.order_link_tel__td_left {
+  width: 160px;
+}
+@media (max-width: 320px) {
+  .order_link_tel__td_left {
+    display: block !important;
+    padding-bottom: 0 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+}
+.order_link_tel__td_right {
+  Margin: 0 auto;
+  margin: 0 auto;
+  width: 410px;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+  word-wrap: break-word;
+}
+@media (max-width: 320px) {
+  .order_link_tel__td_right {
+    display: block !important;
+    padding-left: 0 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+}
+.order_link_tel__content.title {
+  font-weight: bold;
+}
+.order_link_tel__content.value a[href^='tel'] {
+  color: #303030;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
 }
 .banner__heading {
   color: #fff;
@@ -267,7 +321,7 @@ li {
                 </table>
               </td>
             </tr>
-            <tr class="layout__tr">
+            <tr class="layout__tr layout__tr_header">
               <td class="layout__td">
                 <table class="header">
                   <tr class="header__tr">
@@ -280,6 +334,15 @@ li {
               </td>
             </tr>
             <!--+map-->
+            <tr class="layout__tr layout__tr_order_header">
+              <td class="layout__td">
+                <table class="order_header">
+                  <tr class="order_header__tr">
+                    <td class="order_header__td" colspan="100%">Заголовок</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
             <tr class="layout__tr layout__tr_order">
               <td class="layout__td">
                 <table class="order">
@@ -294,6 +357,20 @@ li {
                 </table>
               </td>
             </tr>
+            <tr class="layout__tr layout__tr_order_link_tel">
+              <td class="layout__td">
+                <table class="order_link_tel">
+                  <tr class="order_link_tel__tr">
+                    <td class="order_link_tel__td order_link_tel__td_left">
+                      <p class="order_link_tel__content title">Номер</p>
+                    </td>
+                    <td class="order_link_tel__td order_link_tel__td_right">
+                      <p class="order_link_tel__content value"><a href="tel:+7925111333777">+7925111333777</a></p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
             <!--+button(button_link, button_text)-->
             <tr class="layout__tr layout__tr_nav">
               <td class="layout__td">
@@ -301,9 +378,9 @@ li {
                   <tr class="nav__tr">
                     <td class="nav__td">
                       <ul class="nav__menu">
-                        <li class="nav__item"><a href="https://www.nowtaxi.ru/">На сайт</a></li>
-                        <li class="nav__item"><a href="#">Отписаться</a></li>
-                        <li class="nav__item"><a href="#">Тарифы</a></li>
+                        <li class="nav__item"><a href="https://www.nowtaxi.ru/" target="_blank">На сайт</a></li>
+                        <li class="nav__item"><a href="#" target="_blank">Отписаться</a></li>
+                        <li class="nav__item"><a href="#" target="_blank">Тарифы</a></li>
                       </ul>
                     </td>
                   </tr>
